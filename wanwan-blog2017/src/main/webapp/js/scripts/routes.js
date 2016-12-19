@@ -1,38 +1,19 @@
 ﻿define([], function () {
     return {
-        defaultRoute: '/form',
+        defaultRoute: '/start',
         routes: {
-            'form': {
-                templateUrl: 'views/form.html',
-                url: '/form',
-                dependencies: ['controller/formController'],
+            'start': {
+                templateUrl: 'views/login.html',
+                url: '/start',
+                dependencies: ['controller/loginController'],
                 allowAnonymous: true
             },
-            'form.required': {
-                templateUrl: 'views/form-required.html',
-                url: '/required',
-                dependencies: [],
+            'home': {
+            	templateUrl: 'views/home.html',
+                url: '/home',
+                dependencies: ['controller/homeController'],
                 allowAnonymous: true
-            },
-            'form.optional': {
-                templateUrl: 'views/form-optional.html',
-                url: '/optional',
-                dependencies: [],
-                allowAnonymous: true
-            }, 
-            'form.confirm': {
-                templateUrl: 'views/form-confirm.html',
-                url: '/confirm',
-                dependencies: [],
-                allowAnonymous: true
-            },
-            'login':{
-            	 templateUrl: 'views/login.html',
-                 url: '/login',
-                 dependencies: ['controller/loginController'],
-                 allowAnonymous: true
             }
-            
             
         }
     };
