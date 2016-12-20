@@ -4,8 +4,8 @@ define([ 'app', "service/LoginService" ], function(app) {
 
 				$scope.login = function() {
 					// 获取用户名
-					var name = $scope.admin.name;
-					var password = $scope.admin.password;
+					var name = $scope.current.username;
+					var password = $scope.current.password;
 					var data = {
 						"name" : name,
 						"password" : password
