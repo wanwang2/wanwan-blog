@@ -10,5 +10,15 @@ define([ 'app' ], function(app) {
 				success(data);
 			})
 		}
+		
+		me.ajaxGet = function(url, data, success) {
+			$http({
+				method : "get",
+				url : url,
+				data : data
+			}).success(function(data) {
+				success(data);
+			})
+		}
 	});
 });

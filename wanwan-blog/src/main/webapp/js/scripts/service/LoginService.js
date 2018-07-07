@@ -3,7 +3,7 @@ define([ 'app', 'service/common/ajaxService' ], function(app) {
 		var me = this;
 		me.login = function(url, data, success) {
 			console.log("service...")
-			ajaxService.ajaxPost(url, data, success);
+			ajaxService.ajaxGet(url, data, success);
 		}
 
 	});

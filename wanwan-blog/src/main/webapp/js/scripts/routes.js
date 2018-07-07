@@ -13,8 +13,13 @@
                 url: '/home',
                 dependencies: ['controller/homeController'],
                 allowAnonymous: true
+            },
+            'learn': {
+            	templateUrl: 'views/learn.html',
+                url: '/learn',
+                dependencies: ['controller/learnController'],
+                allowAnonymous: true
             }
-            
         }
     };
 });
