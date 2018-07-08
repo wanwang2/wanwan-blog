@@ -12,6 +12,10 @@ define(['app', 'service/LoginService'], function (app) {
 				$location.path("/home");
 			});
     	}
+    	$scope.showText = function(){
+    		console.log('showText function...');
+    		loginService.showText();
+    	}
     	
     }); 
 }); 

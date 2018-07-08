@@ -10,6 +10,7 @@ require.config({
 		'angularAMD' : '../lib/angular-plugins/angularAMD',
 		'css' : '../lib/requirejs/css.min',
 		'jquery' : '../lib/jquery.min',
+		'layer' : '../lib/layer',
 		'ueditorConfig' : '../lib/ueditor/ueditor.config',
 		'ueditorAll' : '../lib/ueditor/ueditor.all.min',
 		'wdatePicker' : '../lib/My97DatePicker/WdatePicker',
@@ -27,6 +28,7 @@ require.config({
 		'ueditorConfig' : ['jquery'],
 		'ueditorAll' : ['jquery'],
 		'wdatePicker' : ['jquery'],
+		'layer':['jquery'],
 		'ui-bootstrap' : [ 'angular'],
 		'blockUI' : [ 'angular'],
         'angular-sanitize' : [ 'angular' ]

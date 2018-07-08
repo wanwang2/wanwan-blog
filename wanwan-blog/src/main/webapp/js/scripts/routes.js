@@ -19,6 +19,12 @@
                 url: '/learn',
                 dependencies: ['controller/learnController'],
                 allowAnonymous: true
+            },
+            'login': {
+            	templateUrl: 'views/login.html',
+                url: '/login',
+                dependencies: ['controller/loginController'],
+                allowAnonymous: true
             }
         }
     };

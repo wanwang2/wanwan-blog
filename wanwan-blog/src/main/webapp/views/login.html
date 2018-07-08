@@ -1,5 +1,13 @@
 <div ng-include="'views/header.html'"></div>
 <div ng-controller="loginController">
+
+	<div id="header">
+	  <div id="header-con">
+	     <div><a href="javascript:;" id="bLogin" ng-click="showText()">登录</a></div>
+	     <div><a href="javascript:;" id="bReg">注册</a></div>
+	   </div>
+	</div>
+	<div id="loginBox" class="modal modal-dialog">
 	<div class="text-center">
 		<div>用户登陆</div>
 		<form>
@@ -26,7 +34,7 @@
 				</div>
 			</div>
 		</form>
-		
-
 	</div>
+	</div>
+	
 </div>
